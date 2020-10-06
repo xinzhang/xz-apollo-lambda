@@ -14,6 +14,10 @@ aws cloudformation deploy \
   --parameter-overrides BucketName=xz-lambda-apollo Version=latest \
   --capabilities CAPABILITY_IAM
 
+### use sam for local
+- [install](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+- sam local start-api --template-file cloudformation.yml
+
 ### validation
 - zipinfo dist-latest.zip
 - aws s3 ls s3://xz-lambda-apollo
